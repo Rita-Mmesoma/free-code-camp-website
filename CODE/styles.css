@@ -1,0 +1,405 @@
+body{
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6f7;
+}
+
+header{
+    background-color: #0a0a23;
+    display: flex;
+    color: white;
+    height: 25px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+header .input-container{
+    width: 40%;
+}
+header input{
+    width: 100%;
+    padding: 7px 0px 4px 20px;
+    background-color: #3b3b4f;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: Dosis;
+}
+
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.menu-bar{
+    display: none;
+}
+.change-lang, .menu, .menu-bar{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 0.1s;
+}
+.change-lang:hover, .menu:hover, .menu-bar:hover{
+    color: #0a0a23;
+    background-color: white;
+    border: none;
+}
+.change-lang:hover{
+    fill: #0a0a23;
+}
+.change-lang{
+    padding: 3px 5px;
+}
+.menu, .sign-in, button{
+    padding: 3px 15px;
+    font-size: 24px;
+}
+.sign-in, button{
+    color: #0a0a23;
+    background-color: #fecc4c;
+    border: 3px solid #feac32;
+    
+}
+.sign-in:hover, button{
+    background: #fecc4cc4;
+}
+
+
+#hero-container{
+    background: linear-gradient(-10deg, #dff3ff 35%, rgba(237, 202, 216, 0) 75%, #ffd7e0), radial-gradient(circle, #ffcae1 0, #daeafc 100%);
+    margin: 0;
+    /* padding: 50px 20px; */
+}
+.first-hero{
+    display: flex;
+    /* width: 1000px; */
+    /* margin: 0 auto; */
+    justify-content: center;
+    padding-top: 50px ;
+    
+}
+.first-hero .txt-container h1{
+    font-size: 4em;
+    color: #1b1b32;
+    line-height: 90px;
+}
+.first-hero .txt-container p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1b1b32;
+    width: 540px;
+}
+.first-hero .txt-container p span{
+    display: block;
+}
+.txt-container{
+    width: 550px;
+}
+.img-container img{
+    margin-left: -150px;
+    width: 850px;
+    height: 550px;
+    -webkit-mask-image:-webkit-gradient(linear,left top,right top,from(transparent),color-stop(20%,#000));
+    mask-image: linear-gradient(90deg, transparent 0, #000 20%);
+}
+.second-hero{
+    margin-top: 8vh;
+   /*  display: block;
+    justify-content: center; */
+}
+.second-hero p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1b1b32;
+}
+.second-hero p span{
+    font-weight: bold;
+}
+.second-hero .logo-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.second-hero .logo-row img{
+    width: 100px;
+    height: 100px;
+}
+.second-hero .logo-row .apple-logo{
+    height: 50px;
+    width: 50px;
+}
+
+#learn-section{
+    background-color: #3b3b4f;
+    color: #dfdfe2;
+    padding: 8vh 0 8vh 0;
+}
+#learn-section h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 4vh;
+}
+#learn-section .landing-benefits{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    width: 1250px;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+#learn-section .landing-benefits h3{
+    font-size: 20px;
+}
+#learn-section .landing-benefits p{
+    font-size: 18px;
+}
+.btn-container{
+    justify-self: center;
+    margin-top: 4vh;
+}
+.btn-container button{
+    padding: 10px 70px 10px 70px;
+    width: 500px;
+}
+
+#testimonial-section{
+    margin-bottom: 15vh;
+}
+#testimonial-section h3{
+    text-align: center;
+    color: #1b1b32;
+    font-size: 36px;
+}
+#testimonial-section .testimonial-card{
+    background-color: white;
+    display: flex;
+    justify-self: center;
+    height: 320px;
+    width: 1100px;
+    box-shadow: 0 3px 13px 1px rgba(0, 0, 0, .09);
+    margin-bottom: 8vh;
+}
+#testimonial-section .testimonial-card .testimonial-card-header img{
+    width: 320px;
+}
+#testimonial-section .testimonials-footer{
+    align-self: center;
+    text-align: center;
+    color: #3b3b4f;
+}
+#testimonial-section .testimonial-meta h3{
+    font-size: 24px;
+}
+#testimonial-section .testimonial-meta p{
+    font-size: 23px;
+}
+#testimonial-section .testimony p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+@media (max-width: 600px) {
+   header .input-container, .menu, .sign-in, .img-container{
+    display: none;
+    } 
+    header a{
+        font-size: 20px;
+    }
+    .menu-bar,.first-hero, .first-hero{
+        display: block;
+    }
+  
+    .first-hero .txt-container{
+        width: 100%;
+        text-align: start;
+    }
+    .txt-container h1{
+        width: 80%;
+    }
+   
+    .first-hero .txt-container p{
+        width: 80%;
+        font-size: 24px;
+        line-height: 1.8;
+    }
+    .first-hero .txt-container p span{
+        display: inline;
+    }
+    .btn{
+        margin-left: 20px;
+        padding: 20px 10px 20px 10px;
+    }
+    .second-hero .logo-row{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .second-hero .logo-row img{
+        height: 40px;
+    }
+   
+    #learn-section h2{
+        font-size: 27px;
+        margin-bottom: 8vh;
+    }
+    #learn-section .landing-benefits{
+        display: block;
+        width: 80%;
+    }
+    #learn-section .landing-benefits div{
+        margin-bottom: 8vh;
+    }
+    .btn-container{
+        width: 80%;
+    }
+    .btn-container button{
+        width: 100%;
+        font-size: 23px;
+        padding: 10px 20px 10px 20px;
+    }
+    #testimonial-section{
+        justify-items: center;
+    }
+    #testimonial-section h3{
+        font-size: 27px;
+        width: 80%;
+    }
+    #testimonial-section .testimonial-card{
+        flex-direction: column;
+        width: 320px;
+        height: 880px;
+    }
+    #testimonial-section .testimonial-meta h3{
+        font-size: 23px;
+    }
+    #testimonial-section .testimonial-meta p{
+        font-size: 20px;
+    }
+    #testimonial-section .testimony p{
+        font-size: 19px;
+        text-align: start;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 699px){
+    .img-container, .input-container{
+        display: none;
+    }
+    .first-hero .txt-container{
+        width: 100%;
+        text-align: start;
+    }
+    .txt-container h1{
+        width: 90%;
+    }
+   
+    .first-hero .txt-container p{
+        width: 80%;
+    }
+    .first-hero .txt-container p span{
+        display: inline;
+    }
+    .btn{
+        margin-left: 20px;
+        padding: 20px 10px 20px 10px;
+    }
+    .second-hero .logo-row{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .second-hero .logo-row img{
+        height: 40px;
+    }
+   
+    #learn-section h2{
+        font-size: 27px;
+        margin-bottom: 8vh;
+    }
+    #learn-section .landing-benefits{
+        display: block;
+        width: 80%;
+    }
+    #learn-section .landing-benefits div{
+        margin-bottom: 8vh;
+    }
+    .btn-container{
+        width: 80%;
+    }
+    .btn-container button{
+        width: 100%;
+        font-size: 23px;
+        padding: 10px 20px 10px 20px;
+    }
+    #testimonial-section{
+        justify-items: center;
+    }
+    #testimonial-section h3{
+        font-size: 27px;
+        width: 80%;
+    }
+    #testimonial-section .testimonial-card{
+        flex-direction: column;
+        width: 320px;
+        height: 880px;
+    }
+    #testimonial-section .testimonial-meta h3{
+        font-size: 23px;
+    }
+    #testimonial-section .testimonial-meta p{
+        font-size: 20px;
+    }
+    #testimonial-section .testimony p{
+        font-size: 19px;
+        text-align: start;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px){
+    .img-container, .input-container{
+        display: none;
+    }
+    #learn-section .landing-benefits{
+        width: 80%;
+    }
+    .btn{
+        margin-left: 20px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    #testimonial-section{
+        justify-items: center;
+    }
+
+    #testimonial-section .testimonial-card{
+        flex-direction: column;
+        width: 320px;
+        height: 880px;
+    }
+    
+    #testimonial-section .testimony p{
+        text-align: start;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    #learn-section .landing-benefits{
+        width: 80%;
+    }
+}

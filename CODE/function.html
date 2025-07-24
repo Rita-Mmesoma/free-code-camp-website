@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+
+    <script>
+        // Function used to calculate a student's score
+        function calculate(test, exam){
+            const score = test + exam;
+
+            if(score > 100){
+                console.log("Input a correct score", score, "is not acceptable");
+            }else if(score >= 70 && score <= 100){
+                console.log("Grade: A, because you scored ", score);
+            }else if(score >= 60){
+                console.log("Grade: B, because you scored ", score);
+            }else if(score >= 50){
+                console.log("Grade: C, because you scored ", score);
+            }else if(score >= 45){
+                console.log("Grade: D, because you scored ", score);
+            }else if(score >= 40){
+                console.log("Grade: E, because you scored ", score);
+            }else{
+                console.log("Grade: F, because you scored ", score);
+            }
+        }
+        calculate(30, 150);
+    </script>
+</body>
+</html>
